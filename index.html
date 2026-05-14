@@ -8,20 +8,27 @@
     <link href="https://googleapis.com" rel="stylesheet" />
   </head>
   <body>
+    <!-- <header>
+      <img src="free-icon-font-exit-3917349.png" alt="" />
+    </header> -->
     <!-- 시계 -->
     <h1 id="nowTime"></h1>
 
     <div id="timeUnder">
       <!-- 시간별 인삿말 -->
       <p id="hello"></p>
-      <input class="username" />
+      <input type="text" class="username" onkeypress="show_name(event)" />
     </div>
 
     <!-- 오늘할일  인풋추가할것 -->
     <p id="today">What is your main goal for today?</p>
     <div class="mainGoal">
-      <input />
+      <input type="text" class="today" onkeypress="show_name(event)" />
     </div>
+    <p id="word"></p>
+    <!-- 인풋살려서 체크박스 해제할떄 만들기 -->
+    <!-- <input type="checkbox" id="word" /> -->
+
     <!-- 배경이미지 -->
     <div class="img"></div>
 

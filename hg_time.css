@@ -32,7 +32,7 @@ body {
   align-items: center;
   color: white;
   font-size: 40px;
-  width: 70px;
+  width: 120px;
 }
 #famous {
   display: flex;
@@ -42,12 +42,14 @@ body {
   font-weight: 50px;
   margin-bottom: 10px;
   color: white;
+  height: 400px;
 }
 #today {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 35px;
+  padding-top: 60px;
   margin: 0;
   color: white;
 }
@@ -58,6 +60,7 @@ input {
   border-right: 0;
   border-bottom: 1;
   border-bottom-color: white;
+  text-align: center;
 }
 input:focus {
   outline: none;
@@ -74,4 +77,20 @@ input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.today {
+  font-size: 40px;
+  color: white;
+  width: 580px;
+  padding-top: 40px;
+}
+
+#word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+  border-bottom: 10;
+  border-color: white;
 }

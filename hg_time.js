@@ -37,3 +37,42 @@ famousText = [
 ];
 let randomFamous = famousText[Math.floor(Math.random() * famousText.length)]; //famous 배열의  랜덤 숫자
 famous.textContent = randomFamous;
+// 처음 웹페이지를 켤때 실행하기 or 할일이 저장됐을때 실행하기
+function getTodo() {
+  // 할일 보여줄 p태그 가져오기
+  let p = document.getElementById("word");
+  // 로컬스토리지에 저장된 데이터 가져오기
+  // *존재하지 않을경우 null이 출력됨
+  let todo = localStorage.getItem("todo");
+}
+function setTodo() {
+  // input에 적은 내용 가져오기
+  let input = document.querySelector(".today").value;
+  // 로컬스토리지에 적은내용 저장하기
+  localStorage.setItem("todo", input);
+}
+
+let word = document.getElementById("word");
+let today = document.querySelector(".today");
+today.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    setTodo();
+    word.textContent = today.value;
+
+    today.style.display = "none";
+
+    event.preventDefault();
+
+    // word.innerHTML = "-" + today.value;
+
+    // let i = 0;
+    // today.classList.add("hidden");
+    // i++;
+  }
+});
+// word.addEventListener("change", function (event) {
+//   if (event.target.checked) {
+//     getTodo();
+//   } else {
+//   }
+// });
